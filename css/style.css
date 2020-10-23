@@ -1,0 +1,70 @@
+@font-face {
+    font-family: europhonic;
+    src: url(../fonts/Europhonic.otf);
+}
+.font-europhonic {
+    font-family: europhonic;
+}
+
+@font-face {
+    font-family: roboto-medium;
+    src: url(../fonts/Roboto-Medium.ttf);
+}
+.font-roboto-medium {
+    font-family: roboto-medium;
+}
+
+@font-face {
+    font-family: roboto-regular;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+.font-roboto-regular {
+    font-family: roboto-regular;
+}
+
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+.font-Montserrat-Regular {
+    font-family: Montserrat-Regular;
+}
+@font-face {
+    font-family: Montserrat-Medium;
+    src: url(../fonts/Montserrat-Mediumr.ttf);
+}
+.font-Montserrat-Medium {
+    font-family: Montserrat-Medium;
+}
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url(../fonts/Montserrat-Bold.ttf);
+}
+.font-Montserrat-Bold {
+    font-family: Montserrat-Bold;
+}
+.selectedlinkdes{
+    color:#fff !important;
+}
+@font-face {
+    font-family: Lato-Black;
+    src: url(../fonts/Lato-Black.ttf);
+}
+.font-Lato-Black {
+    font-family: Lato-Black;
+}
+@font-face {
+    font-family: Lato-Regular;
+    src: url(../fonts/Lato-Regular.ttf);
+}
+.font-Lato-Regular {
+    font-family: Lato-Regular;
+}
+
+
+/* header css */
+
+
+
+
+

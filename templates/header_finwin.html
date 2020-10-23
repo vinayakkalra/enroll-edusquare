@@ -1,0 +1,71 @@
+<body>
+    <div class="first-container">
+        <div class="nav-container solid solid-nav " id="shrink" style="height: 102px;align-items: center; background-color: #FFC000;
+        display: flex;
+        z-index: 1;
+        z-index: 1;">
+            <div class="nav-row" style="display: flex;">
+                <div class="nav-logo">
+                    <a href="#">
+                        <img src="images/Untitled-7desk.png" alt="">
+                    </a>
+                </div>
+                <div class="nav-controls" style="margin: auto;text-align: end;margin-right: 0;">
+                    <a  class="headerhover" href="https://edusquare.co.in/">HOME</a>
+                    <a class="headerhover" href="https://edusquare.co.in/about-us/">ABOUT US</a>
+                    <a class="headerhover" href="https://edusquare.co.in/course-category/medical/">COURSES</a>
+                    <a class="headerhover" href="https://edusquare.co.in/edusquare-in-news/">STUDENT AREA</a>
+                    <a class="headerhover" href="https://edusquare.co.in/result/">RESULTS</a>
+                    <a class="headerhover" href="https://edusquare.co.in/north-indias-largest-exam/">ETSE</a>
+                    <a class="headerhover" href="https://edusquare.co.in/contact/">CONTACT US</a>
+                   
+                </div>
+
+            </div>
+        </div>
+    </div>
+<!-- 
+    <div class="container" >
+        <div class="row">
+
+        </div>
+    </div> -->
+
+
+
+
+
+</body>
+
+<script>
+    $(document).ready(function () {
+
+        $(window).scroll(function () {
+
+            var height = $('.first-container').height();
+            var scrollTop = $(window).scrollTop();
+
+            if (scrollTop >= height - 40) {
+                $('.nav-container').addClass('solid-nav');
+            } else {
+                $('.nav-container').removeClass('solid-nav');
+            }
+
+        });
+    });
+</script>
+<script>
+    // When the user scrolls down 50px from the top of the document, resize the header's font size
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 695 || document.documentElement.scrollTop > 695) {
+            document.getElementById("shrink").style.height = "80px";
+            
+        } else {
+            document.getElementById("shrink").style.height = "102px";
+        }
+    }
+</script>
+
+</html>

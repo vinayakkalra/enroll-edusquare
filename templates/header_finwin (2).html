@@ -1,0 +1,178 @@
+<?php 
+session_start();
+// if (array_key_exists("logout", $_GET)) {
+//     // check logout value 1 or not
+            
+//              $_COOKIE["id"] = "";  
+            
+//             session_destroy();
+            
+//             setcookie("id", "", time() - 60*60);
+//             header("Refresh:0; url=index.php");
+//     //        $_COOKIE["id"] = "";  
+//     // destroy cookie and session
+//         }else if ((array_key_exists("id", $_SESSION) AND $_SESSION['id']) OR (array_key_exists("id", $_COOKIE) AND $_COOKIE['id'])) {
+//             // logout value 0 so check session and cookie exist so take them to loggedin page
+         
+            
+//         }
+if (array_key_exists("id", $_COOKIE) && $_COOKIE ['id']) {
+        
+        $_SESSION['id'] = $_COOKIE['id'];
+        
+    }
+
+    if (array_key_exists("id", $_SESSION)) {
+
+    ?> 
+        //put whatever html/style/script you want here, for example
+        <script>
+            $( '#mycourses' ).css('display', 'block');
+            $( '#Logoutbtn' ).css('display', 'block');
+            $( '#Loginsignup' ).css('display', 'none');
+            $( '#signupfir' ).css('display', 'none');
+            $( '#cartmenu' ).css('display', 'block');
+           
+        </script>
+    <?php
+    //   include("connection.php");
+      
+    //   $query = "SELECT diary FROM `users` WHERE id = ".mysqli_real_escape_string($link, $_SESSION['id'])." LIMIT 1";
+    //   $row = mysqli_fetch_array(mysqli_query($link, $query));
+ 
+    //   $diaryContent = $row['diary'];
+    
+    //put whatever html/style/script you want here, for example
+} else {
+    ?> 
+    <script>
+         $( '#mycourses' ).css('display', 'none');
+        $( '#Logoutbtn' ).css('display', 'none');
+        $( '#Loginsignup' ).css('display', 'block');
+        $( '#signupfir' ).css('display', 'bock');
+        $( '#cartmenu' ).css('display', 'none');
+    </script>
+<?php
+   
+}
+        // header("Location: index.php");
+        
+    
+    ?>
+<body>
+    <div class="first-container">
+        <div class="nav-container solid solid-nav " id="shrink" style="height: 80px;display:flex;align-items:center;
+        z-index: 1;">
+            <div class="nav-row">
+                <div class="nav-logo">
+                    <a href="#">
+                        <img src="images/finstreet_resized.png" alt="">
+                    </a>
+                </div>
+                <div class="nav-controls" style="    display: flex;align-items: center;padding: 0;margin: 0;justify-content: center;">
+                <div>
+                    <a id="selectedlink1" class ="menustyle1" href="index" style="color: rgba(255, 255, 255, .5);">Home</a>
+                    </div>
+                    <a id="selectedlink2" class ="menustyle1" href="about_us_"  style="color: rgba(255, 255, 255, .5);">About Us</a>
+                    <a id="selectedlink3" class ="menustyle1" href="events_mobile"  style="color: rgba(255, 255, 255, .5);">Events</a>
+                    <a id="selectedlink4" class ="menustyle1" href="courses"  style="color: rgba(255, 255, 255, .5);">Courses</a>
+                    <a id="selectedlink5" class ="menustyle11" href="contactus"  style="color: rgba(255, 255, 255, .5);font-family: 'Poppins', sans-serif !important;font-size: 0.898rem !important;font-weight: 500 !important;">Contact Us</a>
+                    <a  href="contact" id="mycourses" style="display:none;color: rgba(255, 255, 255, .5);font-family: 'Poppins', sans-serif !important;font-size: 0.898rem !important;font-weight: 500 !important;">My courses</a>
+                    <!-- <div class="pull-xs-right"> -->
+                    <!-- <a href ='index.php?logout=1'>
+                        <button class="btn btn-success-outline" id="Logoutbtn" type="submit" style="display:none;">Logout</button>
+                        </a> -->
+                    <!-- </div> -->
+                    <!-- <a  href='index.php?logout=1' id="Logoutbtn" style="display:none;color: rgba(255, 255, 255, .5);">Logout</a> -->
+                    <!-- <a id="selectedlink8" href="index1log.php" id="Loginsignup" style="color: rgba(255, 255, 255, .5);">LogIn/SignUP</a> -->
+                    <a  href='index.php?logout=1' class ="menustyle111" id="Logoutbtn"  style="display: flex;align-items: center; padding: 0;">
+                  
+                    <button  style="margin: auto 10px;margin-left: 20px; background-color: #3a79f9;" type="button"
+                        class="btn btn-primary menustyle111"> Logout</button>
+                    </a>
+                    <a href="cart.php" class="nav-item nav-link active" id="cartmenu" style="align-items: center;display: flex;padding: 15px;text-align: center;background-color: #3a79f9;border-radius: 5px;">
+                    <h5 class="px-0 cart" style="font-size: 18px;margin: 0;display: flex;color: white;align-items: center;text-align: center;position: relative;top: 8px;">
+                        <i class="fas fa-shopping-cart" style=" font-size: 17px; color: beige; margin-right: 6px;"></i> Cart
+                        <span id="cart_count" class="text-warning bg-light" style=" padding: 3px;  margin: 0;  background-color: #264a94 !important;color: #fff !important;display: flex;margin-left: 6px;align-items: center;text-align: center;width: 17px;font-size: 14px;height: 17px;justify-content: center;"> <?php
+
+                                            if (isset($_SESSION['cart'])){
+                                $count = count($_SESSION['cart']);
+                                    echo "<span id=\"cart_count\" >$count</span>";
+                                }else{
+                                    echo "<span id=\"cart_count\" >0</span>";
+                                }
+
+                                ?></span>                    </h5>
+                </a>
+                    
+                        <a href="index1sign.php" class="menustyle1" id="signupfir" style="display: block; align-items: center; padding: 0px;">
+                        <button id="selectedlink10" style="font-size: .8125rem;padding: .375rem 1rem;margin: auto 10px;margin-left: 20px;margin-right: 0px;background-color: #3a79f9;/* border-radius: 20px; */" type="button" class="btn btn-primary menustyle111">Sign Up</button></a>
+                        <a href="index1log.php" class="menustyle1" id="Loginsignup" style="display: block; align-items: center; padding: 0px;">
+                        <button id="selectedlink9" style="font-size: .8125rem;padding: .375rem 1rem;margin: auto 10px;margin-left: 20px;background-color: #3a79f9;/* border-radius: 20px; */margin-right: 0;background-color: #FFF !important;color: #142b51 !important;text-decoration: none;font-weight: bold !important;" type="button" class="btn btn-primary menustyle111">Log In</button></a>
+                    <!-- <button style="margin: auto 10px; background-color: #3a79f9; border-radius: 20px;" type="button"
+                        class="btn btn-primary">Book Event</button> -->
+                        
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+<!-- 
+    <div class="container" >
+        <div class="row">
+
+        </div>
+    </div> -->
+
+
+
+
+
+</body>
+
+<script>
+    $(document).ready(function () {
+
+        $(window).scroll(function () {
+
+            var height = $('.first-container').height();
+            var scrollTop = $(window).scrollTop();
+
+            if (scrollTop >= height - 40) {
+                $('.nav-container').addClass('solid-nav');
+            } else {
+                $('.nav-container').removeClass('solid-nav');
+            }
+
+        });
+    });
+</script>
+<script>
+    // When the user scrolls down 50px from the top of the document, resize the header's font size
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 695 || document.documentElement.scrollTop > 695) {
+            document.getElementById("shrink").style.height = "80px";
+            
+        } else {
+            document.getElementById("shrink").style.height = "80px";
+        }
+    }
+</script>
+<!-- <script >
+      $(document).ready(function () {
+     $(".selectedlink").click(function() {
+        var index = $(".selectedlink").index(this);
+        // alert( $(".list-group-item").index(this) );
+        alert(index);
+        // $('#hiddenInputName').val(index);
+        // $(".selectedlink").removeClass('activedes');
+        $(".selectedlink").removeClass('activedes');
+    $(this).addClass('activedes');
+});
+});
+</script> -->
+
+</html>
