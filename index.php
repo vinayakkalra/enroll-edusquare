@@ -4,27 +4,6 @@
 <html lang="en">
 
 <head>
-
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-5D7KX4V');</script>
-<!-- End Google Tag Manager -->
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-100780365-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-100780365-2');
-</script>
-
-
-
     <!-- <meta name='viewport' content='width=device-width, initial-scale=1'>
 <script src='https://kit.fontawesome.com/a076d05399.js'></script> -->
     <!-- Required meta tags -->
@@ -33,13 +12,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <!-- Not required meta tags but essential for seo and link sharing -->
     <meta name="description"
-        content="Get the best services in embroidery digitizing, vector digitizing, vector dervices and designing services.">
+        content="Students deserve an institution that can mould them into the leaders of tomorrow. Edusquare Talent Search Exam has been specifically designed to test each student’s individual aptitude and prepare them accordingly using exam psychology feedback.">
     <meta name="Keywords"
-        content="Vector digitizing, embroidery digitizing, embroidery designing, vector designing, logo designing, designing services custom designs, vector files">
-    <meta property="og:title" content="Home | QuadB Designs" />
-    <meta property="og:url" content="https://www.quadbdesigns.com/" />
+        content="Students deserve an institution that can mould them into the leaders of tomorrow. Edusquare Talent Search Exam has been specifically designed to test each student’s individual aptitude and prepare them accordingly using exam psychology feedback.">
+    <meta property="og:title" content="Enroll | Edusquare" />
+    <meta property="og:url" content="http://enroll.edusquare.co.in/" />
     <meta property="og:description"
-        content="Get the best services in embroidery digitizing, vector digitizing, vector dervices and designing services.">
+        content="Students deserve an institution that can mould them into the leaders of tomorrow. Edusquare Talent Search Exam has been specifically designed to test each student’s individual aptitude and prepare them accordingly using exam psychology feedback.">
     <!-- <meta property="og:image" itemprop="image"
         content="https://www.thetopcontroller.com/images/top_controller_fav.png" />
     <meta property="og:image:secure_url" itemprop="image"
@@ -53,12 +32,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
     <!-- font awesone -->
-    <title>Home | QuadB Designs</title>
+    <title>Enroll | Edusquare</title>
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/stylee.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css" />
     <style type="text/css">
+        html {
+            scroll-behavior: smooth;
+        }
         /* custom css for the page */
         .headertext {
             color: white;
@@ -265,33 +247,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         }
     </style>
 
-    <!-- Facebook Pixel Code -->
-<script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '448347776024725');
-  fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=448347776024725&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Facebook Pixel Code -->
-
 </head>
 
 <body>
-
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5D7KX4V"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
 <?php
 
     $error = ""; $successMessage = "";
@@ -301,8 +259,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         if (isset($_POST["name-desktop"]) && isset($_POST["phone-desktop"]) && isset($_POST["email-desktop"])) {
            ?>
           <?php
-       $link = mysqli_connect("localhost", "root", "", "enroll_edusquare");
-    //    $link = mysqli_connect("localhost", "edusquare", "edusquare@quadbtech", "enroll_edusquare");
+                $link = mysqli_connect("localhost", "root", "", "enroll_edusquare");
+                // $link = mysqli_connect("localhost", "enroll_edusquare", "zsOqSg8W53ep", "enroll_edusquare");
 
                     if (mysqli_connect_error()){
                 ?>
@@ -354,9 +312,8 @@ else{
         //   window.dataLayer = window.dataLayer || [];
         // window.dataLayer.push({'event': 'quote-success'});
         window.dataLayer = window.dataLayer || [];
-window.dataLayer.push({'event': 'formSubmission'});
-   window.location = 'https://rzp.io/l/o0pLSQV';
-
+        window.dataLayer.push({'event': 'formSubmission'});
+        window.location = 'https://pages.razorpay.com/pl_ENniV1F8mDGvGF/view?email=<?php echo $_POST['email-desktop'];?>&phone=<?php echo $_POST['phone-desktop'];?>&name=<?php echo $_POST['name-desktop'];?>&current_class=<?php echo $_POST['current-class-desktop'];?>&location=<?php echo $_POST['Location-desktop'];?>';
    //alert('form submitted!');
     </script>
    <?php
@@ -395,7 +352,7 @@ if ($_POST) {
        ?>
       <?php
    $link = mysqli_connect("localhost", "root", "", "enroll_edusquare");
-// $link = mysqli_connect("localhost", "edusquare", "edusquare@quadbtech", "enroll_edusquare");
+// $link = mysqli_connect("localhost", "enroll_edusquare", "zsOqSg8W53ep", "enroll_edusquare");
 
                 if (mysqli_connect_error()){
             ?>
@@ -449,7 +406,7 @@ else{
     //    window.location = 'ThankYou.html';
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({'event': 'formSubmission'});
-    window.location = 'https://rzp.io/l/o0pLSQV';
+    window.location = 'https://pages.razorpay.com/pl_ENniV1F8mDGvGF/view?email=<?php echo $_POST['email-mob'];?>&phone=<?php echo $_POST['phone-mob'];?>&name=<?php echo $_POST['name-mob'];?>&current_class=<?php echo $_POST['current-class-mob'];?>&location=<?php echo $_POST['Location-mob'];?>';
 
 
     //alert('form submitted!');
@@ -500,11 +457,6 @@ else{
                                     placeholder="Name Of Applicant">
                             </div>
                             <div class="form-group">
-                                <label for="exampleFormControlInput" class="formstyle">Profile Photo</label>
-                                <label class="btn fileUpload btn-default form-control">Upload <input type="file" hidden="" id="profile-desktop" name="profile-desktop"></label>
-                                <!-- <input type="file" class="form-control" id="profile-desktop" name="profile-desktop"> -->
-                            </div>
-                            <div class="form-group">
                                 <label for="exampleFormControlInput3" class="formstyle">Phone</label>
                                 <input type="tel" class="form-control" id="phone-desktop"  name="phone-desktop"
                                     placeholder="Phone">
@@ -517,20 +469,26 @@ else{
                             <div class="form-group">
                                 <label for="exampleFormControlSelect1" class="formstyle">Current Class</label>
                                 <select class="form-control" id="current-class-desktop" name="current-class-desktop">
-                                    <option>Class XI(Non-Medical)</option>
-                                    <option>Class XI(Medical)</option>
-                                    <option>Class XII(Non-Medical)</option>
-                                    <option>Class XII(Medical)</option>
+                                    <option value="0">Select Class</option>
+                                    <option>Class VIII</option>
+                                    <option>Class IX</option>
+                                    <option>Class X</option>
                                 </select>
                             </div>
                             <div class="form-group">
                                 <label for="exampleFormControlSelect2" class="formstyle">Location</label>
                                 <select class="form-control" id="Location-desktop" name="Location-desktop" >
+                                    <option value="0">Select Location</option>
                                     <option>Ludhiana</option>
                                     <option>Firozpur</option>
                                     <option>Moga</option>
                                     <option>Gurgaon</option>
                                 </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlInput" class="formstyle">Profile Photo (optional)</label>
+                                <label class="btn fileUpload btn-default form-control">Upload <input type="file" hidden="" id="profile-desktop" name="profile-desktop"></label>
+                                <!-- <input type="file" class="form-control" id="profile-desktop" name="profile-desktop"> -->
                             </div>
                             <div style="display: flex;justify-content: center;">
                                 <button id="submit-desktop" type="submit" class="btn btn-primary mb-2"
@@ -562,12 +520,12 @@ else{
         <div class="container-fluid p-0" style="margin-top: 40px;">
             <div class="container p-0" style="display:flex;justify-content: center;">
                 <h1 style="font-size: 34px;font-weight: 500;">
-                    Details of ACST 2019
+                    Details of ETSE 2020
                 </h1>
             </div>
             <hr style="margin-top: 10px;width: 25%;border-top: 2px solid #FFC119;">
             <div class="container p-0" style="display:flex;justify-content: center;text-align: center;">
-                <p class="paragraphtext">All you need to know before registering for North India's Largest Examination<p>
+                <p class="paragraphtext">All you need to know before registering for North India's Largest Examination</p>
             </div>
             <div class="container p-0" style="display: flex;margin-top: 30px;">
                 <div class="aboutacstimg" style="width: 33%;">
@@ -588,12 +546,12 @@ else{
         <div class="container-fluid p-0" style="margin-top: 40px;">
             <div class="container p-0" style="display:flex;justify-content: center;">
                 <h1 style="font-size: 34px;font-weight: 500;">
-                    About ACST
+                    About ETSE
                 </h1>
             </div>
             <hr style="margin-top: 10px;width: 18%;border-top: 2px solid #FFC119;">
             <div class="container p-0" style="display:flex;justify-content: center;text-align: center;">
-                <p class="paragraphtext">Students deserve an institution that can mould them into the leaders of tomorrow. Edusquare Talent Search Exam has been specifically designed to test each student’s individual aptitude and prepare them accordingly using exam psychology feedback.<p>
+                <p class="paragraphtext">Students deserve an institution that can mould them into the leaders of tomorrow. Edusquare Talent Search Exam has been specifically designed to test each student’s individual aptitude and prepare them accordingly using exam psychology feedback.</p>
             </div>
         </div>
         <div class="container-fluid p-0">
@@ -1075,7 +1033,7 @@ else{
             <div class="container p-0" style="display:flex;justify-content: center;text-align: center;">
                 <p class="paragraphtext"> Proudly successful students who are a testament to the unique methodology of
                     preparation of Edusquare. Our promises come with a seal of proof. The results are right in front of
-                    you.<p>
+                    you.</p>
             </div>
             <div class="container">
 
@@ -1162,11 +1120,6 @@ else{
                             placeholder="Name Of Applicant">
                     </div>
                     <div class="form-group">
-                        <label for="exampleFormControlInputmob" class="formstyle">Profile Photo</label>
-                        <label class="btn fileUpload btn-default form-control">Upload <input type="file" hidden="" id="profile-mob" name="profile-mob"></label>
-                        <!-- <input type="file" class="form-control" id="profile-desktop" name="profile-desktop"> -->
-                    </div>
-                    <div class="form-group">
                         <label for="exampleFormControlInput3mob" class="formstyle">Phone</label>
                         <input type="tel" class="form-control" id="phone-mob"  name="phone-mob"
                             placeholder="Phone">
@@ -1179,20 +1132,26 @@ else{
                     <div class="form-group">
                         <label for="exampleFormControlSelect1mob" class="formstyle">Current Class</label>
                         <select class="form-control" id="current-class-mob" name="current-class-mob">
-                            <option>Class XI(Non-Medical)</option>
-                            <option>Class XI(Medical)</option>
-                            <option>Class XII(Non-Medical)</option>
-                            <option>Class XII(Medical)</option>
+                            <option value="0">Select Class</option>
+                            <option>Class VIII</option>
+                            <option>Class IX</option>
+                            <option>Class X</option>
                         </select>
                     </div>
                     <div class="form-group">
                         <label for="exampleFormControlSelect2mob" class="formstyle">Location</label>
                         <select class="form-control" id="Location-mob" name="Location-mob" >
+                            <option value="0">Select Location</option>
                             <option>Ludhiana</option>
                             <option>Firozpur</option>
                             <option>Moga</option>
                             <option>Gurgaon</option>
                         </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInputmob" class="formstyle">Profile Photo (optional)</label>
+                        <label class="btn fileUpload btn-default form-control">Upload <input type="file" hidden="" id="profile-mob" name="profile-mob"></label>
+                        <!-- <input type="file" class="form-control" id="profile-desktop" name="profile-desktop"> -->
                     </div>
                     <div style="display: flex;justify-content: center;">
                         <button id="submit-mob" type="submit" class="btn btn-primary mb-2"
@@ -1204,12 +1163,12 @@ else{
         <div class="container-fluid p-0" style="margin-top: 40px;">
             <div class="container p-0" style="display:flex;justify-content: center;">
                 <h1 style="font-size: 34px;font-weight: 500;">
-                    Details of ACST 2019
+                    Details of ETSE 2020
                 </h1>
             </div>
             <hr style="margin-top: 10px;width: 25%;border-top: 2px solid #FFC119;">
             <div class="container p-0" style="display:flex;justify-content: center;text-align: center;">
-                <p class="paragraphtext"> All you need to know before registering for North India's Largest Examination<p>
+                <p class="paragraphtext"> All you need to know before registering for North India's Largest Examination</p>
             </div>
             <div class="container p-0" style="margin-top: 30px;width: 100%;">
                 <div class="aboutacstimg" style="width: 80%;margin: 0 auto;">
@@ -1229,12 +1188,12 @@ else{
         <div class="container-fluid p-0" style="margin-top: 40px;">
             <div class="container p-0" style="display:flex;justify-content: center;">
                 <h1 style="font-size: 34px;font-weight: 500;">
-                    About ACST
+                    About ETSE
                 </h1>
             </div>
             <hr style="margin-top: 10px;width: 58%;border-top: 2px solid #FFC119;">
             <div class="container" style="display:flex;justify-content: center;text-align: center;">
-                <p class="paragraphtext" style="width: 96%;text-align: justify;">Students deserve an institution that can mould them into the leaders of tomorrow. Edusquare Talent Search Exam has been specifically designed to test each student’s individual aptitude and prepare them accordingly using exam psychology feedback.<p>
+                <p class="paragraphtext" style="width: 96%;text-align: justify;">Students deserve an institution that can mould them into the leaders of tomorrow. Edusquare Talent Search Exam has been specifically designed to test each student’s individual aptitude and prepare them accordingly using exam psychology feedback.</p>
             </div>
 
         </div>
@@ -1713,7 +1672,7 @@ else{
             </div>
             <hr style="margin-top: 10px;width: 80%;border-top: 2px solid #FFC119;">
             <div class="container" style="display:flex;justify-content: center;text-align:justify;">
-                <p class="paragraphtext">  Proudly successful students who are a testament to the unique methodology of preparation of Edusquare. Our promises come with a seal of proof. The results are right in front of you.<p>
+                <p class="paragraphtext">  Proudly successful students who are a testament to the unique methodology of preparation of Edusquare. Our promises come with a seal of proof. The results are right in front of you.</p>
             </div>
             <div class="container p-0" style="margin-top: 30px;width: 94%;">
             <div id="carouselExampleControlsmob" class="carousel slide" data-ride="carousel">
@@ -1807,6 +1766,15 @@ else{
             }else{
                 $("#phone-desktop").css('border-color','white');
                 $("#phone-desktop").css('border-width','1px');
+                
+                if($("#phone-desktop").val().length==10){
+                    $("#phone-desktop").css('border-color','white');
+                    $("#phone-desktop").css('border-width','1px');
+                }else{
+                    $("#phone-desktop").css('border-color','red');
+                    $("#phone-desktop").css('border-width','2px');
+                    $("#phone-desktop").attr('placeholder','Enter 10 digits only');
+                }
             }
             if(validateEmail()) {
                   $("#email-desktop").css('border-color','white');
@@ -1818,6 +1786,22 @@ else{
                 $("#email-desktop").attr('placeholder','Required Field');
                 error = error + 'email';
             }
+            if($("#current-class-desktop").val() == "0"){
+                $("#current-class-desktop").css('border-color','red');
+                $("#current-class-desktop").css('border-width','2px');
+                error = error + 'class';
+            }else{
+                $("#current-class-desktop").css('border-color','white');
+                $("#current-class-desktop").css('border-width','1px');
+            }
+            if($("#Location-desktop").val() == "0"){
+                $("#Location-desktop").css('border-color','red');
+                $("#Location-desktop").css('border-width','2px');
+                error = error + 'Location';
+            }else{
+                $("#Location-desktop").css('border-color','white');
+                $("#Location-desktop").css('border-width','1px');
+            }            
            
             if(error !== ""){
                  //alert('There are error in the form. Please check your submissions');
@@ -1856,6 +1840,15 @@ else{
             }else{
                 $("#phone-mob").css('border-color','white');
                 $("#phone-mob").css('border-width','1px');
+
+                if($("#phone-mob").val().length==10){
+                    $("#phone-mob").css('border-color','white');
+                    $("#phone-mob").css('border-width','1px');
+                }else{
+                    $("#phone-mob").css('border-color','red');
+                    $("#phone-mob").css('border-width','2px');
+                    $("#phone-mob").attr('placeholder','Enter 10 digits only');
+                }
             }
             if(validateEmail()) {
                   $("#email-mob").css('border-color','white');
@@ -1867,6 +1860,22 @@ else{
                 $("#email-mob").attr('placeholder','Required Field');
                 error = error + 'email';
             }
+            if($("#current-class-mob").val() == "0"){
+                $("#current-class-mob").css('border-color','red');
+                $("#current-class-mob").css('border-width','2px');
+                error = error + 'class';
+            }else{
+                $("#current-class-mob").css('border-color','white');
+                $("#current-class-mob").css('border-width','1px');
+            }
+            if($("#Location-mob").val() == "0"){
+                $("#Location-mob").css('border-color','red');
+                $("#Location-mob").css('border-width','2px');
+                error = error + 'Location';
+            }else{
+                $("#Location-mob").css('border-color','white');
+                $("#Location-mob").css('border-width','1px');
+            }
            
             if(error !== ""){
                  //alert('There are error in the form. Please check your submissions');
@@ -1876,43 +1885,6 @@ else{
               }
                });
     </script>
-    <script>
-        $(document).ready(function () {
-
-            $(window).scroll(function () {
-
-                var height = $('.first-container').height();
-                var scrollTop = $(window).scrollTop();
-
-                if (scrollTop >= height - 40) {
-                    $('.nav-container').addClass('solid-nav');
-                } else {
-                    $('.nav-container').removeClass('solid-nav');
-                }
-
-            });
-        });
-    </script>
-
-    <script>
-        // When the user scrolls down 50px from the top of the document, resize the header's font size
-        window.onscroll = function () { scrollFunction() };
-
-        function scrollFunction() {
-            if (document.body.scrollTop > 695 || document.documentElement.scrollTop > 695) {
-                document.getElementById("shrink").style.height = "80px";
-
-            } else {
-                document.getElementById("shrink").style.height = "80px";
-            }
-        }
-    </script>
-    <script>
-        $("#selectedlink1").css('color', '#fff !important');
-    </script>
-    <!-- <script>
-document.getElementById("selectedlink1").style.color = "white";
-</script> -->
 
 </body>
 

@@ -7,7 +7,7 @@
         if (isset($_POST["name-desktop"]) && isset($_POST["phone-desktop"]) && isset($_POST["email-desktop"])) {
            
     //    $link = mysqli_connect("localhost", "root", "", "enroll_edusquare");
-       $link = mysqli_connect("localhost", "edusquare", "edusquare@quadbtech", "enroll_edusquare");
+    $link = mysqli_connect("localhost", "enroll_edusquare", "zsOqSg8W53ep", "enroll_edusquare");
 
                     if (mysqli_connect_error()){
                 
@@ -73,7 +73,7 @@ if ($_POST) {
     if (isset($_POST["name-mob"]) && isset($_POST["phone-mob"]) && isset($_POST["email-mob"])) {
        
         //    $link = mysqli_connect("localhost", "root", "", "enroll_edusquare");
-        $link = mysqli_connect("localhost", "edusquare", "edusquare@quadbtech", "enroll_edusquare");
+        $link = mysqli_connect("localhost", "enroll_edusquare", "zsOqSg8W53ep", "enroll_edusquare");
 
         if (mysqli_connect_error()){
                 
