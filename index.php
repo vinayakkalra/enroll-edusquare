@@ -26,7 +26,7 @@
     <!-- <meta property="og:image:width" content="640">
     <meta property="og:image:height" content="300"> -->
     <meta property="og:type" content="website" />
-    <!-- <link rel="shortcut icon" href="images/top_controller_fav.png" /> -->
+    <link rel="shortcut icon" href="icons/cropped-Webp.net-compress-image-18-192x192.jpg" />
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -281,6 +281,7 @@ else{
     $name = $_POST['name-desktop'];
     $phone = $_POST['phone-desktop'];
     $email = $_POST['email-desktop'];
+    $school = $_POST['school-desktop'];
     $target_dir = "uploads/";
     $upload = $_FILES['profile-desktop']['name'];
     $target_file = $target_dir . basename($_FILES["profile-desktop"]["name"]);
@@ -301,7 +302,7 @@ else{
     $id = $id + 1;
 
 
-    $query = "INSERT INTO `acst_submissions` (`id`,`name`,`photo`, `phone`, `email`, `class`,`location`, `time`, `from_ip`, `from_browser`) VALUES ($id, '$name','$upload', '$phone', '$email', '$currentclass','$location', '$date_now','$from_ip', '$from_browser')";
+    $query = "INSERT INTO `acst_submissions` (`id`,`name`,`photo`, `phone`, `email`,`school`, `class`,`location`, `time`, `from_ip`, `from_browser`) VALUES ($id, '$name','$upload', '$phone', '$email','$school','$currentclass','$location', '$date_now','$from_ip', '$from_browser')";
 
     // echo $query;
     
@@ -378,6 +379,7 @@ else{
         $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
         $phone = $_POST['phone-mob'];
         $email = $_POST['email-mob'];
+        $school = $_POST['school-mob'];
         $currentclass = $_POST['current-class-mob'];
         $location = $_POST['Location-mob'];
 
@@ -393,7 +395,7 @@ else{
     $id = $id + 1;
 
 
-    $query = "INSERT INTO `acst_submissions` (`id`,`name`,`photo`, `phone`, `email`, `class`,`location`, `time`, `from_ip`, `from_browser`) VALUES ($id, '$name','$upload', '$phone', '$email', '$currentclass','$location', '$date_now','$from_ip', '$from_browser')";
+    $query = "INSERT INTO `acst_submissions` (`id`,`name`,`photo`, `phone`, `email`,`school`, `class`,`location`, `time`, `from_ip`, `from_browser`) VALUES ($id, '$name','$upload', '$phone', '$email','$school','$currentclass','$location', '$date_now','$from_ip', '$from_browser')";
 
     // echo $query;
 
@@ -442,11 +444,11 @@ else{
 
         <div id="header-desktop" style="height: 0;"></div>
         <div class="container-fluid position-relative p-0 colors"
-            style="margin-top: 80px;width: 100%;height:740px;background-color: #FFC000;">
+            style="margin-top: 80px;width: 100%;height:805px;background-color: #FFC000;">
             <div class="container p-0">
                 <h1 class="headertext" style="padding-top: 50px;">Choose Your Profession</h1>
                 <div class="container p-0" style="display: flex;margin-top: 30px;">
-                    <div class="container-fluid" style="width: 33%;margin-top: 84px;">
+                    <div class="container-fluid" style="width: 33%;margin-top:149px;">
                         <img src="images\headerdocdesk.png" alt="/image1/" style="width: 344px;">
                     </div>
                     <div class="container-fluid" style="width: 33%; padding: 0;margin-top: 35px;">
@@ -467,6 +469,11 @@ else{
                                     placeholder="name@example.com">
                             </div>
                             <div class="form-group">
+                                <label for="exampleFormControlInput4" class="formstyle">School</label>
+                                <input type="text" class="form-control" id="school-desktop" name="school-desktop"
+                                    placeholder="School Name">
+                            </div>
+                            <div class="form-group">
                                 <label for="exampleFormControlSelect1" class="formstyle">Current Class</label>
                                 <select class="form-control" id="current-class-desktop" name="current-class-desktop">
                                     <option value="0">Select Class</option>
@@ -477,13 +484,8 @@ else{
                             </div>
                             <div class="form-group">
                                 <label for="exampleFormControlSelect2" class="formstyle">Location</label>
-                                <select class="form-control" id="Location-desktop" name="Location-desktop" >
-                                    <option value="0">Select Location</option>
-                                    <option>Ludhiana</option>
-                                    <option>Firozpur</option>
-                                    <option>Moga</option>
-                                    <option>Gurgaon</option>
-                                </select>
+                                <input type="text" class="form-control" id="Location-desktop" name="Location-desktop"
+                                    placeholder="Location">
                             </div>
                             <div class="form-group">
                                 <label for="exampleFormControlInput" class="formstyle">Profile Photo (optional)</label>
@@ -497,7 +499,7 @@ else{
                         </form>
 
                     </div>
-                    <div class="container-fluid" style="width: 33%;margin-top: 84px;">
+                    <div class="container-fluid" style="width: 33%;margin-top:149px;">
                         <img src="images\headerdesk.png" alt="/image1/" style="width: 344px;">
                     </div>
                 </div>
@@ -602,32 +604,11 @@ else{
                     <div class="feature-box-inner">
                         <div style="display: flex;justify-content: center;align-items: center;">
                             <div class="fbox-icon-inner" style="margin: 20px 0 20px 0;">
-                                <img class="img" src="images\rupees-min.png" alt="">
-                            </div>
-                        </div>
-                        <div style="display: flex;justify-content: center;align-items: center;">
-                            <h3 class="ourservice-heading">Win Special Prizes</h3>
-
-                        </div>
-                        <hr style="border: 1px solid black !important;width: 25%;margin-top: 10px;">
-
-                        <div class="descriptionabout"
-                            style="display: flex;justify-content: center;align-items: center;text-align: center;">
-                            Special arrangements for you to grab attractive prizes and rewards, ranging from laptops to bicycles for your day-to-day little, yet throbbing achievements!
-                        </div>
-
-                    </div>
-                </div>
-                <div style="width: 33%;">
-                    <div class="feature-box-inner">
-                        <div style="display: flex;justify-content: center;align-items: center;">
-                            <div class="fbox-icon-inner" style="margin: 20px 0 20px 0;">
                                 <img class="img" src="images\offline-computer-min.png" alt="">
                             </div>
                         </div>
                         <div style="display: flex;justify-content: center;align-items: center;">
                             <h3 class="ourservice-heading">Offline / Computer Based Test</h3>
-
                         </div>
                         <hr style="border: 1px solid black !important;width: 25%;margin-top: 10px;">
 
@@ -636,7 +617,6 @@ else{
                             Both pen and paper as well as online tests available for students to choose from according
                             to what suits them best.
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -1130,6 +1110,11 @@ else{
                             placeholder="name@example.com">
                     </div>
                     <div class="form-group">
+                        <label for="exampleFormControlInput4mob" class="formstyle">School</label>
+                        <input type="text" class="form-control" id="school-mob" name="school-mob"
+                            placeholder="School Name">
+                    </div>
+                    <div class="form-group">
                         <label for="exampleFormControlSelect1mob" class="formstyle">Current Class</label>
                         <select class="form-control" id="current-class-mob" name="current-class-mob">
                             <option value="0">Select Class</option>
@@ -1140,13 +1125,8 @@ else{
                     </div>
                     <div class="form-group">
                         <label for="exampleFormControlSelect2mob" class="formstyle">Location</label>
-                        <select class="form-control" id="Location-mob" name="Location-mob" >
-                            <option value="0">Select Location</option>
-                            <option>Ludhiana</option>
-                            <option>Firozpur</option>
-                            <option>Moga</option>
-                            <option>Gurgaon</option>
-                        </select>
+                        <input type="text" class="form-control" id="Location-mob" name="Location-mob"
+                            placeholder="Location">
                     </div>
                     <div class="form-group">
                         <label for="exampleFormControlInputmob" class="formstyle">Profile Photo (optional)</label>
@@ -1238,24 +1218,6 @@ else{
                     </div>
                 </div>
                 <!-- 3rd about -->
-                <div style="width: 92%;margin: 25px auto;">
-                    <div class="feature-box-inner">
-                        <div style="display: flex;justify-content: center;align-items: center;">
-                            <div class="fbox-icon-inner" style="margin: 20px 0 20px 0;">
-                                <img class="img" src="images\rupees-min.png" alt="">
-                            </div>
-                        </div>
-                        <div style="display: flex;justify-content: center;align-items: center;">
-                            <h3 class="ourservice-heading">Win Special Prizes</h3>
-
-                        </div>
-                        <hr style="border: 1px solid black !important;width: 25%;margin-top: 10px;">
-                        <div class="descriptionabout" style="display: flex;justify-content: center;align-items: center;text-align:justify;">
-                        Special arrangements for you to grab attractive prizes and rewards, ranging from laptops to bicycles for your day-to-day little, yet throbbing achievements!
-                        </div>
-                    </div>
-                </div>
-                <!-- 4th about -->
                 <div style="width: 92%;margin: 0 auto;">
                     <div class="feature-box-inner">
                         <div style="display: flex;justify-content: center;align-items: center;">
