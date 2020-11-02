@@ -14,7 +14,15 @@
                     <a  class="headerhover" href="https://edusquare.co.in/">HOME</a>
                     <a class="headerhover" href="https://edusquare.co.in/about-us/">ABOUT US</a>
                     <a class="headerhover" href="https://edusquare.co.in/course-category/medical/">COURSES</a>
-                    <a class="headerhover" href="https://edusquare.co.in/edusquare-in-news/">STUDENT AREA</a>
+                    <!-- <a class="headerhover" href="https://edusquare.co.in/edusquare-in-news/">STUDENT AREA</a> -->
+                    <a class="dropdown-toggle headerhover" data-hover="dropdown" data-toggle="dropdown">STUDENT AREA  <b class="caret"></b></a>
+                    <ul class="dropdown-menu" style="background-color:#FFC000;padding:15px;">
+                        <li class="menu-item-4532 aligned-"><a href="https://edusquare.co.in/edusquare-in-news/">Edusquare In News</a></li>
+                        <li class="menu-item-4604 aligned-"><a href="https://rzp.io/l/wZbzaAK">Pay Installment</a></li>
+                        <li class="menu-item-4597 aligned-"><a href="http://selfstudyrocks.com/wp-login.php?redirect_to=http%3A%2F%2Fselfstudyrocks.com%2F">Recorded Lectures Login</a></li>
+                        <li class="menu-item-974 aligned-left"><a href="https://edusquare.co.in/blog-2/">Blog</a></li>
+                        <li class="menu-item-1029 aligned-left"><a href="https://edusquare.co.in/downloads/">Downloads</a></li>
+                    </ul>                    
                     <a class="headerhover" href="https://edusquare.co.in/result/">RESULTS</a>
                     <a class="headerhover" href="https://edusquare.co.in/north-indias-largest-exam/">ETSE</a>
                     <a class="headerhover" href="https://edusquare.co.in/contact/">CONTACT US</a>
@@ -38,6 +46,9 @@
 </body>
 
 <script>
+    $(document).ready(function() {
+        $(".dropdown-toggle").dropdown();
+    });
     $(document).ready(function () {
 
         $(window).scroll(function () {
