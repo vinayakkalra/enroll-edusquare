@@ -446,9 +446,13 @@ else{
 
         <div id="header-desktop" style="height: 0;"></div>
         <div class="container-fluid position-relative p-0 colors"
-            style="margin-top: 80px;width: 100%;height:805px;background-color: #FFC000;">
+            style="margin-top: 80px;width: 100%;height:873px;background-color: #FFC000;">
             <div class="container p-0">
-                <h1 class="headertext" style="padding-top: 50px;">ETSE YOUR FIRST STEP TOWARDS YOUR GOAL</h1>
+                <div class="d-flex justify-content-center">
+                    <div class="col-10">
+                        <h1 class="headertext" style="padding-top: 50px;">ETSE YOUR FIRST STEP TOWARDS YOUR GOAL</h1>
+                    </div>
+                </div>
                 <div class="container p-0" style="display: flex;margin-top: 30px;">
                     <div class="container-fluid" style="width: 33%;margin-top:149px;">
                         <img src="images\headerdocdesk.png" alt="/image1/" style="width: 344px;">
@@ -527,7 +531,7 @@ else{
                     Details of ETSE 2020
                 </h1>
             </div>
-            <hr style="margin-top: 10px;width: 25%;border-top: 2px solid #FFC119;">
+            <hr style="margin-top: 10px;width:20%;margin-left:40%;border-top: 2px solid #FFC119;">
             <div class="container p-0" style="display:flex;justify-content: center;text-align: center;">
                 <p class="paragraphtext">All you need to know before registering for North India's Largest Examination</p>
             </div>
@@ -553,7 +557,7 @@ else{
                     About ETSE
                 </h1>
             </div>
-            <hr style="margin-top: 10px;width: 18%;border-top: 2px solid #FFC119;">
+            <hr style="margin-top: 10px;width:18%;margin-left:42%;border-top: 2px solid #FFC119;">
             <div class="container p-0" style="display:flex;justify-content: center;text-align: center;">
                 <p class="paragraphtext">Students deserve an institution that can mould them into the leaders of tomorrow. Edusquare Talent Search Exam has been specifically designed to test each student’s individual aptitude and prepare them accordingly using exam psychology feedback.</p>
             </div>
@@ -571,7 +575,7 @@ else{
                             <h3 class="ourservice-heading">Scholarship Upto 100%</h3>
 
                         </div>
-                        <hr style="border: 1px solid black !important;width: 25%;margin-top: 10px;">
+                        <hr style="border: 1px solid black !important;width:23%;margin-left:40%;margin-top: 10px;">
 
                         <div class="descriptionabout"
                             style="display: flex;justify-content: center;align-items: center;text-align: center;">
@@ -592,7 +596,7 @@ else{
                             <h3 class="ourservice-heading">Test against the best</h3>
 
                         </div>
-                        <hr style="border: 1px solid black !important;width: 25%;margin-top: 10px;">
+                        <hr style="border: 1px solid black !important;width:23%;margin-left:40%;margin-top: 10px;">
 
                         <div class="descriptionabout"
                             style="display: flex;justify-content: center;align-items: center;text-align: center;">
@@ -612,7 +616,7 @@ else{
                         <div style="display: flex;justify-content: center;align-items: center;">
                             <h3 class="ourservice-heading">Offline / Computer Based Test</h3>
                         </div>
-                        <hr style="border: 1px solid black !important;width: 25%;margin-top: 10px;">
+                        <hr style="border: 1px solid black !important;width:23%;margin-left:40%;margin-top: 10px;">
 
                         <div class="descriptionabout"
                             style="display: flex;justify-content: center;align-items: center;text-align: center;">
@@ -642,7 +646,7 @@ else{
                     Scholarship Details
                 </h1>
             </div>
-            <hr style="margin-top: 10px;width: 25%;border-top: 2px solid #FFC119;">
+            <hr style="margin-top: 10px;width:22%;margin-left:39%;border-top: 2px solid #FFC119;">
             <div class="container p-0" style="margin-top: 50px;">
                 <div class="accordion" id="accordionExample">
                     <div style="display: flex;">
@@ -1011,7 +1015,7 @@ else{
                     Our Proud Achievers
                 </h1>
             </div>
-            <hr style="margin-top: 10px;width: 25%;border-top: 2px solid #FFC119;">
+            <hr style="margin-top: 10px;width:22%;margin-left:39%;border-top: 2px solid #FFC119;">
             <div class="container p-0" style="display:flex;justify-content: center;text-align: center;">
                 <p class="paragraphtext"> Proudly successful students who are a testament to the unique methodology of
                     preparation of Edusquare. Our promises come with a seal of proof. The results are right in front of
