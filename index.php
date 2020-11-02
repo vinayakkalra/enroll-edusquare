@@ -245,6 +245,8 @@
             animation-name: fadeInUp;
             transition: all ease 0.3s;
         }
+
+        .required:after { content:" *";color:red; }
     </style>
 
 </head>
@@ -446,7 +448,7 @@ else{
         <div class="container-fluid position-relative p-0 colors"
             style="margin-top: 80px;width: 100%;height:805px;background-color: #FFC000;">
             <div class="container p-0">
-                <h1 class="headertext" style="padding-top: 50px;">Choose Your Profession</h1>
+                <h1 class="headertext" style="padding-top: 50px;">ETSE YOUR FIRST STEP TOWARDS YOUR GOAL</h1>
                 <div class="container p-0" style="display: flex;margin-top: 30px;">
                     <div class="container-fluid" style="width: 33%;margin-top:149px;">
                         <img src="images\headerdocdesk.png" alt="/image1/" style="width: 344px;">
@@ -454,27 +456,27 @@ else{
                     <div class="container-fluid" style="width: 33%; padding: 0;margin-top: 35px;">
                        <form id="vectform"  method="post" enctype="multipart/form-data">
                             <div class="form-group">
-                                <label for="exampleFormControlInput1" class="formstyle">Name</label>
+                                <label for="exampleFormControlInput1" class="formstyle required">Name</label>
                                 <input type="text" class="form-control" id="name-desktop" name="name-desktop"
                                     placeholder="Name Of Applicant">
                             </div>
                             <div class="form-group">
-                                <label for="exampleFormControlInput3" class="formstyle">Phone</label>
+                                <label for="exampleFormControlInput3" class="formstyle required">Phone</label>
                                 <input type="tel" class="form-control" id="phone-desktop"  name="phone-desktop"
                                     placeholder="Phone">
                             </div>
                             <div class="form-group">
-                                <label for="exampleFormControlInput2" class="formstyle">Email address</label>
+                                <label for="exampleFormControlInput2" class="formstyle required">Email address</label>
                                 <input type="email" class="form-control" id="email-desktop" name="email-desktop"
                                     placeholder="name@example.com">
                             </div>
                             <div class="form-group">
-                                <label for="exampleFormControlInput4" class="formstyle">School</label>
+                                <label for="exampleFormControlInput4" class="formstyle required">School</label>
                                 <input type="text" class="form-control" id="school-desktop" name="school-desktop"
                                     placeholder="School Name">
                             </div>
                             <div class="form-group">
-                                <label for="exampleFormControlSelect1" class="formstyle">Current Class</label>
+                                <label for="exampleFormControlSelect1" class="formstyle required">Current Class</label>
                                 <select class="form-control" id="current-class-desktop" name="current-class-desktop">
                                     <option value="0">Select Class</option>
                                     <option>Class VIII</option>
@@ -483,7 +485,7 @@ else{
                                 </select>
                             </div>
                             <div class="form-group">
-                                <label for="exampleFormControlSelect2" class="formstyle">Location</label>
+                                <label for="exampleFormControlSelect2" class="formstyle required">Location</label>
                                 <input type="text" class="form-control" id="Location-desktop" name="Location-desktop"
                                     placeholder="Location">
                             </div>
@@ -1095,27 +1097,27 @@ else{
                 style="width: 80%;margin: 0 auto;background-color: #FFC000;margin-top: 20px;border-radius: 20px;padding: 30px;">
                 <form id="vectformmob"  method="post" enctype="multipart/form-data">
                     <div class="form-group">
-                        <label for="exampleFormControlInput2mob" class="formstyle">Name</label>
+                        <label for="exampleFormControlInput2mob" class="formstyle required">Name</label>
                         <input type="text" class="form-control" id="name-mob" name="name-mob"
                             placeholder="Name Of Applicant">
                     </div>
                     <div class="form-group">
-                        <label for="exampleFormControlInput3mob" class="formstyle">Phone</label>
+                        <label for="exampleFormControlInput3mob" class="formstyle required">Phone</label>
                         <input type="tel" class="form-control" id="phone-mob"  name="phone-mob"
                             placeholder="Phone">
                     </div>
                     <div class="form-group">
-                        <label for="exampleFormControlInput1mob" class="formstyle">Email address</label>
+                        <label for="exampleFormControlInput1mob" class="formstyle required">Email address</label>
                         <input type="email" class="form-control" id="email-mob" name="email-mob"
                             placeholder="name@example.com">
                     </div>
                     <div class="form-group">
-                        <label for="exampleFormControlInput4mob" class="formstyle">School</label>
+                        <label for="exampleFormControlInput4mob" class="formstyle required">School</label>
                         <input type="text" class="form-control" id="school-mob" name="school-mob"
                             placeholder="School Name">
                     </div>
                     <div class="form-group">
-                        <label for="exampleFormControlSelect1mob" class="formstyle">Current Class</label>
+                        <label for="exampleFormControlSelect1mob" class="formstyle required">Current Class</label>
                         <select class="form-control" id="current-class-mob" name="current-class-mob">
                             <option value="0">Select Class</option>
                             <option>Class VIII</option>
@@ -1124,7 +1126,7 @@ else{
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="exampleFormControlSelect2mob" class="formstyle">Location</label>
+                        <label for="exampleFormControlSelect2mob" class="formstyle required">Location</label>
                         <input type="text" class="form-control" id="Location-mob" name="Location-mob"
                             placeholder="Location">
                     </div>
